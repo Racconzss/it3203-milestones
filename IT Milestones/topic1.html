@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Architectures | Foundations & Traditional Servers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="site-title">The Evolution of Web Server Architectures</h1>
+    </header>
+
+    <!-- Consistent Navigation Bar -->
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic1.html">Foundations & Servers</a></li>
+        <li><a href="topic2.html">Cloud & Green Power</a></li>
+        <li><a href="concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="container">
+        <main class="main-content">
+            <h2 id="main-heading">Foundations & Traditional High-Performance Web Servers</h2>
+            <p>A web server is a combination of hardware and software that processes client requests over the Internet using standard network protocols such as HTTP and HTTPS.</p>
+
+            <!-- Ordered list for step-by-step workflow -->
+            <h3>Core Request Processing & Workflow</h3>
+            <ol>
+                <li><strong>Request Handling Cycle:</strong> When a user enters a URL, the browser sends an HTTP request; the web server receives it, locates or dynamically generates the file, and returns an HTTP response.</li>
+                <li><strong>Static vs. Dynamic Content:</strong> Basic static web pages require simple disk reads, whereas dynamic applications (e.g., WordPress, e-commerce stores) require server-side scripts (PHP, Node.js) and database queries.</li>
+                <li><strong>Service Level Expectations:</strong> Performance is evaluated primarily by response time (latency) and throughput (requests handled per second).</li>
+            </ol>
+
+            <!-- Unordered list for historical challenges -->
+            <h3>Historical Evolution & Bottlenecks</h3>
+            <ul>
+                <li><strong>Bare-Metal On-Premise Hosting:</strong> Early web infrastructure relied on dedicated physical servers requiring high upfront capital, specialized cooling, and full-time administration.</li>
+                <li><strong>Resource Underutilization:</strong> Enterprise bare-metal servers historically operated at only 5% to 15% of total processing capacity during daily operations.</li>
+                <li><strong>Scalability Bottlenecks:</strong> High-volume traffic introduces severe operating system overhead, kernel-user memory copy delays, and multiprocessor lock contention.</li>
+            </ul>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Section Focus</h3>
+            <p>Covers HTTP request-response mechanics, bare-metal hardware constraints, and traffic overload control.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>IT 3203 Class Project. Visit the official course website: <a href="https://ksuweb.github.io/IT3203/" target="_blank">KSU IT 3203</a></p>
+    </footer>
+</body>
+</html>

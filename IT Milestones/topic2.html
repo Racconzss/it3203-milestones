@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Architectures | Cloud, Containers & Green Power</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="site-title">The Evolution of Web Server Architectures</h1>
+    </header>
+
+    <!-- Consistent Navigation Bar -->
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic1.html">Foundations & Servers</a></li>
+        <li><a href="topic2.html">Cloud & Green Power</a></li>
+        <li><a href="concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="container">
+        <main class="main-content">
+            <h2 id="main-heading">Cloud Virtualization, Containers & Green Power Management</h2>
+            <p>Modern web hosting transitions from physical hardware boxes to elastic cloud environments, containerized runtimes, and energy-efficient micro-servers.</p>
+
+            <!-- Highlighted card box -->
+            <div class="card">
+                <h4>Energy Optimization via DVFS</h4>
+                <p>Because CPU dynamic power consumption is tied to clock frequency and voltage ($P \propto f^3$), data centers utilize Dynamic Voltage/Frequency Scaling (DVFS) and server provisioning to cut electrical power without violating client SLAs.</p>
+            </div>
+
+            <!-- Comparison data table -->
+            <h3>Comparative Hosting Paradigms</h3>
+            <table>
+                <tr>
+                    <th>Hosting Model</th>
+                    <th>Primary Strengths</th>
+                    <th>Primary Limitations</th>
+                </tr>
+                <tr>
+                    <td>Public / Private Cloud (VMs)</td>
+                    <td>Rapid elastic scaling, programmable APIs, VM monitoring.</td>
+                    <td>Accumulating hourly costs, hypervisor performance overhead.</td>
+                </tr>
+                <tr>
+                    <td>Docker & Serverless (FaaS)</td>
+                    <td>Zero server management, event-driven auto-scaling.</td>
+                    <td>Cold-start latency, vendor platform lock-in.</td>
+                </tr>
+                <tr>
+                    <td>Low-Power Commodity Servers</td>
+                    <td>Exceptional power efficiency (&lt;10W–30W), low cost.</td>
+                    <td>Limited CPU/RAM capacity; requires mandatory caching.</td>
+                </tr>
+            </table>
+
+            <h3>Embedded IoT & Decentralized P2P Hosting</h3>
+            <ul>
+                <li><strong>Embedded Web Nodes:</strong> Microcontrollers (Arduino, Intel Galileo) equipped with Ethernet/Wi-Fi shields use GPIO pins to serve web pages and control sensors directly.</li>
+                <li><strong>pWeb Architecture:</strong> Decentralized peer-to-peer web hosting combines cloud reliability with distributed user nodes via Distributed Hash Tables (DHT) and DNS gateways.</li>
+            </ul>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Section Focus</h3>
+            <p>Explores cloud IaaS, container runtimes, green server power models, and decentralized networks.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>IT 3203 Class Project. Visit the official course website: <a href="https://ksuweb.github.io/IT3203/" target="_blank">KSU IT 3203</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* ==========================================
+   IT3203 Web servers -  Stylesheet
+   ========================================== */
+
+/* --- 1. ELEMENT SELECTORS (Styles basic HTML tags) --- */
+
+/* Sets the default font, readable spacing, text color, and light background for the whole page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles the top header banner with dark navy blue background and white text */
+header {
+    background-color: #1b263b;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+/* Styles the bottom footer bar to match the header */
+footer {
+    background-color: #1b263b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* Styles links inside the footer */
+footer a {
+    color: #4ea8de;
+    text-decoration: none;
+}
+
+/* Underlines footer links when hovered */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Sets data tables to full width with collapsed borders */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #ffffff;
+}
+
+/* Adds padding and light borders to table cells */
+th, td {
+    border: 1px solid #dcdcdc;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styles table header rows with a distinct slate-blue background */
+th {
+    background-color: #415a77;
+    color: #ffffff;
+}
+
+
+/* --- 2. CLASS SELECTORS (Styles specific custom blocks using dots) --- */
+
+/* Creates a Flexbox navigation bar layout across the top of every page */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #0d1b2a;
+    padding: 0.75rem;
+    list-style: none;
+    margin: 0;
+}
+
+/* Adds space between each navigation menu item */
+.navbar li {
+    margin: 0 1rem;
+}
+
+/* Styles individual navigation links */
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Adds a hover effect: changes link background color when the mouse moves over it */
+.navbar a:hover {
+    background-color: #415a77;
+    color: #e0fbfc;
+}
+
+/* Creates a 2-column layout using CSS Grid for the main page body and sidebar */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Styles the main white content container box */
+.main-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Styles the side column container box */
+.sidebar {
+    background-color: #e0e1dd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #1b263b;
+}
+
+/* Creates a neat framed content card box */
+.card {
+    border: 1px solid #cccccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+
+/* --- 3. ID SELECTORS (Styles unique elements using hashes) --- */
+
+/* Controls the font size and spacing of the main website title */
+#site-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+/* Styles primary section headings with a bottom divider line */
+#main-heading {
+    color: #1b263b;
+    border-bottom: 2px solid #415a77;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Creates a special highlighted callout box with a dashed border */
+#highlight-box {
+    background-color: #e8f4f8;
+    border: 1px dashed #0077b6;
+    padding: 1.2rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
